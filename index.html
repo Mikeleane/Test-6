@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>H5P Player – Reto 7 Días</title>
+  <link rel="stylesheet" href="h5p-player/styles/h5p.css" />
+</head>
+<body>
+  <div id="h5p-container"></div>
+
+  <script src="h5p-player/frame.bundle.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new H5PStandalone.H5P(document.getElementById("h5p-container"), {
+        h5pJsonPath: "h5p-content",
+        frameCss: "h5p-player/styles/h5p.css",
+        frameJs: "h5p-player/frame.bundle.js"
+      });
+    });
+  </script>
+</body>
+</html>
